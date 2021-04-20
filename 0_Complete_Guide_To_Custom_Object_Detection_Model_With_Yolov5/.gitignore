@@ -233,3 +233,6 @@ fabric.properties
 
 # webscraping images
 WebScraping/images
+
+# vscode
+.vscode
