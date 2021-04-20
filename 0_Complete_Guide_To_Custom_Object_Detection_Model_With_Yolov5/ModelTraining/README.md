@@ -11,8 +11,11 @@ The jupyter notebook script is built to train in **Google Colab**. Certain chang
 ## User Guide
 
 ### Data Preparation
+#### Walkthough Dataset
+Click [here](https://www.kaggle.com/yinchuangsum/person-wheel-chair-not-wheel-chair/download) to download the sample dataset for the project walkthrough
+
 #### Dataset Structure
-The structure of dataset should be same as provided [dataset zip file](https://app.roboflow.com/ds/ZjyqsdXmWB?key=2DD0vr5Sdi) :
+The structure of dataset should be same as provided `dataset.zip` file:
 ```
 .
 +-- dataset
