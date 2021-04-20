@@ -6,6 +6,8 @@ In this repository, a complete guide to build a custom object detection model us
 
 Go to medium post for more details explanation.
 
+---
+
 ## Scripts
 - WebScraping
     
@@ -14,6 +16,8 @@ Go to medium post for more details explanation.
 - ModelTraining
 
     GoogleColab Script to train YOLOv5 model
+
+---
 
 ## Getting Started
 - ### Install Anaconda
@@ -27,6 +31,8 @@ Go to medium post for more details explanation.
 - ### Install ClassifAI
     Install [ClassifAI](https://github.com/CertifaiAI/classifai#installation) to label custom dataset
 
+---
+
 ## Environment Setup
 Setup the conda environment
 
@@ -37,11 +43,12 @@ Activate the conda environment by
 
     conda activate object-detection
 
+---
 
 ## User Guide
 1. Web Scraping
 
-    Scrape data from Google using Selenium. Click into *WebScraping* directory. Refer [README.md](./WebScraping/README.md) for detail guidelines.
+    Scrape data from Google using Selenium. Click into `WebScraping` directory. Refer [README.md](./WebScraping/README.md) for detail guidelines.
 
 2. Data Annotation
 
@@ -49,4 +56,4 @@ Activate the conda environment by
 
 4. Model Training
 
-    Train YOLOv5 model using GoogleColab. Refer [README.md](./ModelTraining/README.md) for detail guidelines.
+    Train YOLOv5 model using GoogleColab. Click into `ModelTraining` directory. Refer [README.md](./ModelTraining/README.md) for detail guidelines.

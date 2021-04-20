@@ -21,7 +21,7 @@ The structure of dataset should be same as provided [dataset zip file](https://a
     |   |   +-- <<images>>
     |   +-- labels
     |       +-- <<labels>>  
-    +-- val
+    +-- valid
     |   +-- images
     |   |   +-- <<images>>
     |   +-- labels
@@ -36,9 +36,9 @@ The structure of dataset should be same as provided [dataset zip file](https://a
 ```
 1. train/valid/test folder
     
-    train/valid/test folder should contain two folders: *images* & *labels* \
-    *images* folder contains all the images \
-    *labels* folder contains all the label file in *txt format*:\
+    train/valid/test folder should contain two folders: `images` & `labels` \
+    `images` folder contains all the images \
+    `labels` folder contains all the label file in *txt format*:\
     *note : data labelled in [ClassifAI](https://github.com/CertifaiAI/classifai) is already in this format. The required step is put them into the right folder structure*
     ```
     label x y w h
@@ -46,31 +46,31 @@ The structure of dataset should be same as provided [dataset zip file](https://a
 
 2. data.yaml 
 
-    *data.yaml* is a config file for the model on data path and class names \
-    *note : replace the \<number of classes> and \<array of class name>*
+    `data.yaml` is a config file for the model on data path and class names \
+    *note : replace the \<\<number of classes>> and \<\<array of class name>>*
 
 
     ```
     train: ../train/images
     val: ../valid/images
 
-    nc: <number of classes>
-    names: [<array of class names>]
+    nc: <<number of classes>>
+    names: [<<array of class names>>]
     ```
 
 *In the project, data augmentation and train-validation-test split is done using [roboflow](https://roboflow.com/). But it is optional to use it, as long as the dataset is following the structure mentioned above.*
 
 ### Model training
-1. Zip the dataset folder, rename it into *dataset.zip*\
+1. Zip the dataset folder, rename it into `dataset.zip`\
     ![](../metadata/02.png)
 
-2. Upload *YOLOv5_PyTorch.ipynb* jupyter notebook script to google drive\
+2. Upload `YOLOv5_PyTorch.ipynb` jupyter notebook script to google drive\
     ![](../metadata/03.png)
 
 3. Double click to open Google Colab session\
     ![](../metadata/04.png)
 
-4. Go to files, upload the *dataset.zip*\
+4. Go to `files`, upload the `dataset.zip`\
     ![](../metadata/05.png)
 
 5. Run the scripts and follow the instructions written in the jupyter notebook
@@ -91,11 +91,11 @@ Activate the conda environment by
 ### Inference
 
 #### Weights
-For conventions, save the weights of the model into *./src/weights* folder
+For conventions, save the weights of the model into `./src/weights` folder
 ![](../metadata/07.png)
 
 #### Source of Data
-Multiple sources of data are able to be run for inference: \
+Multiple sources of data are able to be run for inference: 
 
 ```
 python ./src/detect.py --source 0  # webcam
@@ -126,7 +126,7 @@ python ./src/detect.py --source img_0007.png --weights ./weights/best.pt --conf 
 
 ### Output Folder
 After running the inference script, the output folder to save output data will be stated in the terminal\
-In this example below, the output data is saved in *runs/detect/exp*
+In this example below, the output data is saved in `runs/detect/exp`
 
 ![](../metadata/09.png)
 

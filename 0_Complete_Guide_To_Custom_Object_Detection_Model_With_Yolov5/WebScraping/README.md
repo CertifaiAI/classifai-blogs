@@ -24,5 +24,5 @@ This guide explains how to scrape image from Google using this script.
 ## Output
 
 ### Image folder
-the result will be stored in *./images/\<\<folder name>>* folder with the name of *\<\<folder name>>_\<\<numbers>>.png* \
-Eg. ./images/wheelchair1/wheelchair1_0001.png
+the result will be stored in `./images/<<folder name>>` folder with the name of `<<folder name>>_<<numbers>>.png` \
+Eg. `./images/wheelchair1/wheelchair1_0001.png`
