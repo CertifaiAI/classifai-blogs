@@ -1,8 +1,10 @@
 # Model Training
 
-This guide explains how to train your own **custom dataset** with YOLOv5. *This script is levaraging the [repo](https://github.com/ultralytics/yolov5)*
+This guide explains how to train your own **custom dataset** with YOLOv5. 
 
 The jupyter notebook script is built to train in **Google Colab**. Certain changes to be done to the script are expected if training is performed locally.
+
+*Reference: https://github.com/ultralytics/yolov5*
 
 ---
 
@@ -10,7 +12,7 @@ The jupyter notebook script is built to train in **Google Colab**. Certain chang
 
 ### Data Preparation
 #### Dataset Structure
-The structure of dataset should be same as provided [dataset.zip](link-to-dataset) :
+The structure of dataset should be same as provided [dataset zip file](https://app.roboflow.com/ds/ZjyqsdXmWB?key=2DD0vr5Sdi) :
 ```
 .
 +-- dataset
@@ -36,7 +38,8 @@ The structure of dataset should be same as provided [dataset.zip](link-to-datase
     
     train/valid/test folder should contain two folders: *images* & *labels* \
     *images* folder contains all the images \
-    *labels* folder contains all the label file in *txt format*:
+    *labels* folder contains all the label file in *txt format*:\
+    *note : data labelled in [ClassifAI](https://github.com/CertifaiAI/classifai) is already in this format. The required step is put them into the right folder structure*
     ```
     label x y w h
     ```
@@ -58,23 +61,22 @@ The structure of dataset should be same as provided [dataset.zip](link-to-datase
 *In the project, data augmentation and train-validation-test split is done using [roboflow](https://roboflow.com/). But it is optional to use it, as long as the dataset is following the structure mentioned above.*
 
 ### Model training
-1. Zip the dataset folder into *dataset.zip*\
-    *image*
+1. Zip the dataset folder, rename it into *dataset.zip*\
+    ![](../metadata/02.png)
 
-2. Upload jupyter notebook script to google drive\
-    *image*
+2. Upload *YOLOv5_PyTorch.ipynb* jupyter notebook script to google drive\
+    ![](../metadata/03.png)
 
 3. Double click to open Google Colab session\
-    *image*
+    ![](../metadata/04.png)
 
 4. Go to files, upload the *dataset.zip*\
-    *image*
+    ![](../metadata/05.png)
 
-5. Run the scripts and follow the instructions written in the jupyter notebook\
-    *image*
+5. Run the scripts and follow the instructions written in the jupyter notebook
 
 6. After running all the scripts, the weights are save in your drive. Download it for inference.\
-    *image*
+    ![](../metadata/06.png)
 
 ---
 
@@ -90,6 +92,7 @@ Activate the conda environment by
 
 #### Weights
 For conventions, save the weights of the model into *./src/weights* folder
+![](../metadata/07.png)
 
 #### Source of Data
 Multiple sources of data are able to be run for inference: \
@@ -112,5 +115,25 @@ Run the inference script\
 python ./src/detect.py --source <<source>> --weights <<weights name>> --conf <<threshold>>
 ```
 
+Eg. 
+
+```
+python ./src/detect.py --source img_0007.png --weights ./weights/best.pt --conf 0.5
+```
+
 ---
 ## Sample Output
+
+### Output Folder
+After running the inference script, the output folder to save output data will be stated in the terminal\
+In this example below, the output data is saved in *runs/detect/exp*
+
+![](../metadata/09.png)
+
+### Input
+
+![](../metadata/10.png)
+
+### Output
+
+![](../metadata/11.png)
