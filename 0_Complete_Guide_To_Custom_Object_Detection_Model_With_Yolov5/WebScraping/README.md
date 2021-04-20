@@ -3,43 +3,26 @@ This guide explains how to scrape image from Google using this script.
 
 ---
 
-## Getting Started
-### Install Anaconda
-
-Download and install [Anaconda](https://www.anaconda.com/products/individual).
-
-### Install ChromeDriver
-
-Download [ChromeDriver](https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver#quick-installation)
-
-### Environment Setup
-
-Setup the conda environment by
-
-    
-    conda env create -f environment.yml
-    
-
----
-
 ## User Guide
 
-1. Activate the conda environment by
+1. Activate the conda environment.\
+ *Refer [here](../README.md#environment-setup) to setup the conda environment.*
 
     ```
-    conda activate selenium-web-scraping
+    conda activate object-detection
     ```
 
-2. Run python script by
+2. Scrape images with script\
+*note: replace variables with <<>> to respective arguments*
 
     ```
-    python ./src/main.py <keyword to scrape> <folder name>
+    python ./src/main.py <<keyword to scrape>> <<folder name>>
     ```
 
 ---
 
-## Sample Output
+## Output
 
 ### Image folder
-the result will be stored in *./images/\<folder name>* folder with the name of *\<folder name>_\<numbers>.png* \
+the result will be stored in *./images/\<\<folder name>>* folder with the name of *\<\<folder name>>_\<\<numbers>>.png* \
 Eg. ./images/wheelchair1/wheelchair1_0001.png

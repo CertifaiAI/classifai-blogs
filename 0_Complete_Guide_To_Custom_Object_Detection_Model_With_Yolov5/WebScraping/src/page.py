@@ -2,6 +2,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support.ui import WebDriverWait
 from locators import *
+from urllib.parse import unquote
 import time
 
 class BasePage(object):
@@ -92,18 +93,21 @@ class GoogleImageResultsPage(BasePage):
         for img in img_list:
 
             try:
-                action = img.click()
+                img.click()
             except:
                 continue            
 
-            time.sleep(3)
-
-
             #if can't get the image source, skip it
             try:
-                output_list.append(self.get_attribute(GoogleImageResultPageLocators.IMAGE_SOURCE, "src"))
+                image_url = img.get_attribute("href")
+
+                start_idx = image_url.index("imgurl=") + 7
+                end_idx = image_url.index('&', start_idx)
+                image_src = image_url[start_idx: end_idx]
+                output_list.append(unquote(image_src))
+
             except:
                 continue
+
             
         return output_list
-

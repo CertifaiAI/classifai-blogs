@@ -29,6 +29,8 @@ print("start scraping image...")
 
 image_search_page.scroll_till_end()
 
+print("collecting image source...")
+
 img_src_list = image_search_page.get_img_source_list()
 
 print("start downloading image...")

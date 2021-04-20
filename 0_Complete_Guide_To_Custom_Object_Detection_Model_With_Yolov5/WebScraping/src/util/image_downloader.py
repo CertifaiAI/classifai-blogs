@@ -21,7 +21,7 @@ def save_image(src, counter, path):
 
     if src.startswith("http"):
         try:
-            response = requests.get(src)
+            response = requests.get(src, timeout=20)
             img = Image.open(BytesIO(response.content))
             img.save(output_path)
         except:

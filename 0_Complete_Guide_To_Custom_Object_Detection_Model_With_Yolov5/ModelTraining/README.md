@@ -10,7 +10,7 @@ The jupyter notebook script is built to train in **Google Colab**. Certain chang
 
 ### Data Preparation
 #### Dataset Structure
-The structure of dataset should be same as the sample in this repository :
+The structure of dataset should be same as provided [dataset.zip](link-to-dataset) :
 ```
 .
 +-- dataset
@@ -34,7 +34,6 @@ The structure of dataset should be same as the sample in this repository :
 ```
 1. train/valid/test folder
     
-    *image* \
     train/valid/test folder should contain two folders: *images* & *labels* \
     *images* folder contains all the images \
     *labels* folder contains all the label file in *txt format*:
@@ -56,37 +55,36 @@ The structure of dataset should be same as the sample in this repository :
     names: [<array of class names>]
     ```
 
+*In the project, data augmentation and train-validation-test split is done using [roboflow](https://roboflow.com/). But it is optional to use it, as long as the dataset is following the structure mentioned above.*
 
 ### Model training
-1. Zip the dataset folder into *dataset.zip*
+1. Zip the dataset folder into *dataset.zip*\
+    *image*
 
-2. Upload jupyter notebook script to google drive
+2. Upload jupyter notebook script to google drive\
+    *image*
 
-3. Double click to open Google Colab session
+3. Double click to open Google Colab session\
+    *image*
 
-4. Go to files, upload the *dataset.zip*
+4. Go to files, upload the *dataset.zip*\
+    *image*
 
-5. Run the scripts
+5. Run the scripts and follow the instructions written in the jupyter notebook\
+    *image*
 
-6. After running all the scripts, the weights are save in your drive. Download it for evaluation and testing
+6. After running all the scripts, the weights are save in your drive. Download it for inference.\
+    *image*
 
 ---
 
 ## Model Inference
 
-### Install Anaconda
-
-Download and install [Anaconda](https://www.anaconda.com/products/individual).
-
 ### Environment Setup
-
-Setup the conda environment by
-
-    conda env create -f environment.yml
 
 Activate the conda environment by
 
-    conda activate selenium-web-scraping
+    conda activate object-detection
 
 ### Inference
 
@@ -107,8 +105,8 @@ python ./src/detect.py --source 0  # webcam
 ```
 
 #### Run Inference 
-To run inference script \ 
-*note : change variables with << >>*
+Run the inference script\
+*note : replace the variables with << >> to the respective arguments*
 
 ```
 python ./src/detect.py --source <<source>> --weights <<weights name>> --conf <<threshold>>

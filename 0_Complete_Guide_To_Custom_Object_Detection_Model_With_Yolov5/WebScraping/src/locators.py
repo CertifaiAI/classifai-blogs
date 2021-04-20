@@ -14,5 +14,4 @@ class GoogleImageResultPageLocators(object):
     """A class for search results locators. All google image search results locators should come here"""
     
     RESULT_INDICATOR = (By.XPATH, "//div[@class='DwpMZe ']")
-    RESULT_IMAGES = (By.XPATH, "//img[@class='rg_i Q4LuWd']")
-    IMAGE_SOURCE = (By.CSS_SELECTOR, "div.BIB1wf img.n3VNCb")
+    RESULT_IMAGES = (By.XPATH, "//a[@class='wXeWr islib nfEiy mM5pbd']")
