@@ -2,11 +2,15 @@
 This guide explains how to scrape image from Google using this script.
 
 ---
+## Environment Setup
+
+Follow the setup guide [here](../README.md#getting-started).
+
+---
 
 ## User Guide
 
 1. Activate the conda environment.\
- *Refer [here](../README.md#environment-setup) to setup the conda environment.*
 
     ```
     conda activate object-detection
@@ -18,6 +22,11 @@ This guide explains how to scrape image from Google using this script.
     ```
     python ./src/main.py <<keyword to scrape>> <<folder name>>
     ```
+    Eg.
+    ```
+    python ./src/main.py wheelchair wheelchair1
+    ```
+
 
 ---
 
@@ -25,4 +34,5 @@ This guide explains how to scrape image from Google using this script.
 
 ### Image folder
 the result will be stored in `./images/<<folder name>>` folder with the name of `<<folder name>>_<<numbers>>.png` \
-Eg. `./images/wheelchair1/wheelchair1_0001.png`
+Eg.\
+ `./images/wheelchair1/wheelchair1_0001.png`

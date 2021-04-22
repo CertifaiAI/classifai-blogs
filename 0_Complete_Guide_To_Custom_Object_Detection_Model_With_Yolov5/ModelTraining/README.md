@@ -2,7 +2,7 @@
 
 This guide explains how to train your own **custom dataset** with YOLOv5. 
 
-The jupyter notebook script is built to train in **Google Colab**. Certain changes to be done to the script are expected if training is performed locally.
+The jupyter notebook script is built to train the YOLOv5 model in **Google Colab**. Certain changes to the script are expected if training is performed locally.
 
 *Reference: https://github.com/ultralytics/yolov5*
 
@@ -11,11 +11,11 @@ The jupyter notebook script is built to train in **Google Colab**. Certain chang
 ## User Guide
 
 ### Data Preparation
-#### Walkthough Dataset
-Click [here](https://www.kaggle.com/yinchuangsum/person-wheel-chair-not-wheel-chair/download) to download the sample dataset for the project walkthrough
+#### Walkthrough Dataset
+Click [here](https://www.kaggle.com/yinchuangsum/person-wheel-chair-not-wheel-chair/download) to download the sample dataset for the project walkthrough. 
 
 #### Dataset Structure
-The structure of dataset should be same as provided `dataset.zip` file:
+The file structure of dataset should be same as the dataset provided:
 ```
 .
 +-- dataset
@@ -39,10 +39,10 @@ The structure of dataset should be same as provided `dataset.zip` file:
 ```
 1. train/valid/test folder
     
-    train/valid/test folder should contain two folders: `images` & `labels` \
+    each train/valid/test folder should contains two folders: `images` & `labels` \
     `images` folder contains all the images \
     `labels` folder contains all the label file in *txt format*:\
-    *note : data labelled in [ClassifAI](https://github.com/CertifaiAI/classifai) is already in this format. The required step is put them into the right folder structure*
+    *note : data labelled in [ClassifAI](https://github.com/CertifaiAI/classifai) is already in this format. The required step is putting them into the right file structure*
     ```
     label x y w h
     ```
