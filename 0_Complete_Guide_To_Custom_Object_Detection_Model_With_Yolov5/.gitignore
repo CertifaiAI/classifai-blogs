@@ -234,5 +234,8 @@ fabric.properties
 # webscraping images
 WebScraping/images
 
+# modeltraining inference result
+ModelTraining/runs
+
 # vscode
 .vscode

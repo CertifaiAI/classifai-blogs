@@ -115,13 +115,13 @@ Run the inference script\
 *note : replace the variables with << >> to the respective arguments*
 
 ```
-python ./src/detect.py --source <<source>> --weights <<weights name>> --conf <<threshold>>
+python ./src/detect.py --source <<source>> --weights <<weights path>> --conf <<threshold>>
 ```
 
 Eg. 
 
 ```
-python ./src/detect.py --source img_0007.png --weights ./weights/best.pt --conf 0.5
+python ./src/detect.py --source img_0007.png --weights ./src/weights/best.pt --conf 0.5
 ```
 
 ---

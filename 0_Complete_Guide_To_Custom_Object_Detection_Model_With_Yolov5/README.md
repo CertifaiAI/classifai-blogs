@@ -24,9 +24,7 @@ Go to medium post for more details explanation.
     Download and install [Anaconda](https://www.anaconda.com/products/individual) to create virtual environment
 
 - ### Install ChromeDriver
-    Install [ChromeDriver](https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver#quick-installation) with the quick installation command to run Selenium
-
-    ![](./metadata/01.png)
+    Install [ChromeDriver](https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver#quick-installation) with the quick installation command to run Selenium. Refer this [link](https://zwbetz.com/download-chromedriver-binary-and-add-to-your-path-for-automated-functional-testing/) to add ChromeDriver to PATH
 
 - ### Install ClassifAI
     Install [ClassifAI](https://github.com/CertifaiAI/classifai#installation) to label custom dataset
@@ -34,9 +32,8 @@ Go to medium post for more details explanation.
 ---
 
 ## Environment Setup
-Setup the conda environment
+Open terminal from this folder, setup the conda environment
 
-    
     conda env create -f environment.yml
 
 Activate the conda environment by
@@ -48,7 +45,7 @@ Activate the conda environment by
 ## User Guide
 1. Web Scraping
 
-    Scrape data from Google using Selenium. Click into `WebScraping` directory. Refer [README.md](./WebScraping/README.md) for detailed guidelines.
+    Scrape data from Google using Selenium. Refer [here](./WebScraping/README.md) for detailed guidelines.
 
 2. Data Annotation
 
@@ -56,4 +53,4 @@ Activate the conda environment by
 
 4. Model Training
 
-    Train YOLOv5 model using GoogleColab. Click into `ModelTraining` directory. Refer [README.md](./ModelTraining/README.md) for detailed guidelines.
+    Train YOLOv5 model using GoogleColab. Refer [here](./ModelTraining/README.md) for detailed guidelines.

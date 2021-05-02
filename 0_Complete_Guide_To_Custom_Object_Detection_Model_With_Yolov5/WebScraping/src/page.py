@@ -108,6 +108,5 @@ class GoogleImageResultsPage(BasePage):
 
             except:
                 continue
-
             
         return output_list
