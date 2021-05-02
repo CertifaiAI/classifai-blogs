@@ -37,10 +37,13 @@ def save_image(src, counter, path):
     return True
 
 
-def save_images(src_list, path):
+def save_images(src_list, path, img_num):
     """Method for saving a list of images"""
     
     counter = 1
     for src in src_list:
+        if counter == img_num + 1:
+            break
         if (save_image(src, counter, path)):
             counter += 1
+        

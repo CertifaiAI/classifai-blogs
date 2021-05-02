@@ -7,8 +7,9 @@ import argparse
 
 parser = argparse.ArgumentParser()
 
-parser.add_argument("keyword", help="Keyword you would like to search for google image scraping", type=str)
-parser.add_argument("folder_name", help="The folder name you would like to store the scrapped images in", type=str)
+parser.add_argument("keyword", type=str, help="Keyword to search for google image scraping")
+parser.add_argument("folder_name", type=str, help="The folder name to store the scrapped images in")
+parser.add_argument("img_num", type=int, default=-1, help="The number of images to scrape")
 
 args = parser.parse_args()
 
@@ -37,6 +38,6 @@ print("start downloading image...")
 
 driver.close()
 
-downloader.save_images(img_src_list, args.folder_name)
+downloader.save_images(img_src_list, args.folder_name, args.img_num)
 
 print("finish downloading images...")
