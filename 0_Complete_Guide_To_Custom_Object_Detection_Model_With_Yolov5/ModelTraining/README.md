@@ -42,7 +42,7 @@ The file structure of dataset should be same as the dataset provided:
     each train/valid/test folder should contains two folders: `images` & `labels` \
     `images` folder contains all the images \
     `labels` folder contains all the label file in *txt format*:\
-    *note : data labelled in [ClassifAI](https://github.com/CertifaiAI/classifai) is already in this format. The required step is putting them into the right file structure*
+    *note : data labelled in [ClassifAI](https://github.com/CertifaiAI/classifai) is already in this format. The only required step is putting them into the right file structure*
     ```
     label x y w h
     ```

@@ -1,7 +1,6 @@
 # Complete Guide to Custom Object Detection Model with YOLOv5
 
-*image of wheel chair detection*
-
+![](./metadata/cover.jpg)
 In this repository, a complete guide to build a custom object detection model using YOLOv5 will be conducted.
 
 Go to medium post for more details explanation.
