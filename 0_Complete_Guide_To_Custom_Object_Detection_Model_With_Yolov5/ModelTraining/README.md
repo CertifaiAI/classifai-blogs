@@ -42,7 +42,7 @@ The file structure of dataset should be same as the dataset provided:
     each train/valid/test folder should contains two folders: `images` & `labels` \
     `images` folder contains all the images \
     `labels` folder contains all the label file in *txt format*:\
-    *note : data labelled in [ClassifAI](https://github.com/CertifaiAI/classifai) is already in this format. The only required step is putting them into the right file structure*
+    *Note: Data labelled in [ClassifAI](https://github.com/CertifaiAI/classifai) is already in this format. The only required step is putting them into the right file structure*
     ```
     label x y w h
     ```
@@ -50,7 +50,7 @@ The file structure of dataset should be same as the dataset provided:
 2. data.yaml 
 
     `data.yaml` is a config file for the model on data path and class names \
-    *note : replace the \<\<number of classes>> and \<\<array of class name>>*
+    *Note: Replace the \<\<number of classes>> and \<\<array of class name>>*
 
 
     ```
@@ -112,7 +112,7 @@ python ./src/detect.py --source 0  # webcam
 
 #### Run Inference 
 Run the inference script\
-*note : replace the variables with << >> to the respective arguments*
+*Note: Replace the variables with << >> to the respective arguments*
 
 ```
 python ./src/detect.py --source <<source>> --weights <<weights path>> --conf <<threshold>>

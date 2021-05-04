@@ -18,7 +18,7 @@ Follow the setup guide [here](../README.md#getting-started).
     ```
 
 3. Scrape images with script\
-*note: replace variables with <<>> to respective arguments*
+*Note: Replace variables with <<>> to respective arguments*
 
     * **keyword to scrape**: The keyword to be searched in Google.
 
