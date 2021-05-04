@@ -1,3 +1,4 @@
+![](./metadata/logo.jpg)
 # classifai-blogs
 Source code centered around classifai blog posts
 
